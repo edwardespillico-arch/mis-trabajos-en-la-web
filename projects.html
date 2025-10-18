@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Pro - Proyectos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_modules.css">
+</head>
+<body>
+
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">RUBICKSITO</h1>
+            <nav class="nav-main">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Acerca de Mí</a>
+                <a href="projects.html" class="nav-link active">Proyectos</a> <a href="contact.html" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <h2 class="display-4 mb-5 text-center text-primary">Mis Trabajos Recientes</h2>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm module-card">
+                    <img src="img/proyectos/maquetacion.jpg" class="card-img-top" alt="Captura del Trabajo CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabajo CSS (Maquetación)</h5>
+                        <p class="card-text">Maquetación de una landing page compleja utilizando Grid y Flexbox para un diseño 100% responsive.</p>
+                        <span class="badge bg-info text-dark">CSS3</span>
+                        <span class="badge bg-primary">Bootstrap</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm module-card">
+                    <img src="img/proyectos/calculadora.jpg" class="card-img-top" alt="Captura de la Calculadora JS">
+                    <div class="card-body">
+                        <h5 class="card-title">Trabajo Calculadora</h5>
+                        <p class="card-text">Una calculadora interactiva implementada en JavaScript puro, enfocada en la manipulación eficiente del DOM.</p>
+                        <span class="badge bg-warning text-dark">JavaScript</span>
+                        <span class="badge bg-secondary">DOM</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm module-card">
+                    <img src="img/proyectos/clima.jpg" class="card-img-top" alt="Captura de la App de Clima">
+                    <div class="card-body">
+                        <h5 class="card-title">App de Clima (API REST)</h5>
+                        <p class="card-text">Aplicación que consume una API de clima para mostrar datos en tiempo real. Uso de Fetch y promesas.</p>
+                        <span class="badge bg-danger">API REST</span>
+                        <span class="badge bg-warning text-dark">JavaScript</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver Demo</a>
+                        <a href="#" class="btn btn-sm btn-outline-secondary">Ver Código</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio | Hecho con Bootstrap 5</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

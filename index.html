@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Pro - Mi Nombre</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/_layout.css">
+    <link rel="stylesheet" href="css/_modules.css">
+</head>
+<body>
+
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">Mi Nombre</h1>
+            <nav class="nav-main">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="projects.html" class="nav-link">Proyectos</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        
+        <section class="profile-hero p-4 mb-5 shadow-lg bg-light rounded-3">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="img/perfil.jpg" alt="Foto de Perfil" class="profile-img"> 
+                </div>
+                <div class="col-md-8">
+                    <h2 class="display-5 mb-3">Desarrollador Web Front-End</h2>
+                    <p class="lead description-text">
+                        **Descripción Breve:** Apasionado por la arquitectura CSS moderna y el desarrollo interactivo con JavaScript. Mi objetivo es transformar diseños complejos en experiencias de usuario fluidas y accesibles.
+                    </p>
+                    <button class="btn btn-primary btn-cta">Ver Experiencia Completa</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="row g-4">
+            
+            <section class="col-lg-6">
+                <div class="card h-100 module-card">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary"><i class="bi bi-briefcase-fill"></i> Trabajos</h3>
+                        <ul class="list-group list-group-flush list-jobs">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Trabajo CSS (Maquetación compleja)
+                                <span class="badge bg-secondary">CSS/Bootstrap</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Trabajo Calculadora (Manipulación del DOM)
+                                <span class="badge bg-secondary">JavaScript</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Proyecto Personal (API de Clima)
+                                <span class="badge bg-secondary">JS/API REST</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="col-lg-6">
+                <div class="card h-100 module-card">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary"><i class="bi bi-code-slash"></i> Ejercicios Prácticos</h3>
+                        
+                        <div class="accordion accordion-flush" id="accordionExercises">
+                            
+                            <div class="accordion-item">
+                                <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS">CSS</button></h4>
+                                <div id="collapseCSS" class="accordion-collapse collapse" data-bs-parent="#accordionExercises">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="exercises/css/eje-css-01.html" target="_blank">Eje 01: Animaciones y Transiciones</a></li>
+                                            <li><a href="exercises/css/eje-css-02.html" target="_blank">Eje 02: Responsive Design Avanzado</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML">HTML</button></h4>
+                                <div id="collapseHTML" class="accordion-collapse collapse" data-bs-parent="#accordionExercises">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="exercises/html/eje-html-01.html" target="_blank">Eje 01: Tablas y Formularios</a></li>
+                                            <li><a href="exercises/html/eje-html-02.html" target="_blank">Eje 02: Semántica HTML5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS">JavaScript</button></h4>
+                                <div id="collapseJS" class="accordion-collapse collapse" data-bs-parent="#accordionExercises">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="exercises/js/eje-js-01.html" target="_blank">Eje 01: Peticiones Asíncronas (Fetch)</a></li>
+                                            <li><a href="exercises/js/eje-js-02.html" target="_blank">Eje 02: POO Básica en JS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Portafolio | Hecho con Bootstrap 5</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script> 
+</body>
+</html>
